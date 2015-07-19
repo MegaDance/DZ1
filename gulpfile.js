@@ -1,5 +1,14 @@
 var gulp = require("gulp"),
-    browserSync = require("browser-sync");
+    browserSync = require("browser-sync"),
+    concatCss = require('gulp-concat-css'),
+    notify = require("gulp-notify");
+ 
+gulp.task('concat', function () {
+  return gulp.src('/src/css/*.css')
+    .pipe(concatCss("all.css"))
+    .pipe(gulp.dest('css/'))
+    .pipe(notify("Update!"));
+});
 
 //запуск сервера
 gulp.task('server', function () {
@@ -21,4 +30,4 @@ gulp.task('watch', function () {
 });
 
 //дефолтные задачи
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['server', 'watch', 'concat']);

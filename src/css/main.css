@@ -2,76 +2,179 @@ html {
     height: 100%;   
 }
 body {
-    height: 100%;
     background: url(../img/fon.png) repeat;
-    font: normal 1em 'fira_sanslight';
+    font: normal 1em 'fira_sansbook';
     color: #4a545d;
 }
 
-
-
-
-
-/* прибьём футер к низу*/
-.wrapper{
-    position: relative;
-    min-height: 100%;
-    min-width: 970px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
-    height: auto!important;
-    overflow: hidden;
+/*шапка*/
+.site-header {
+  height: 119px;
+  background: #eff3f7 url(../img/line.png) bottom center no-repeat;
+  position: relative;
+  margin-bottom: 39px; /*делаем отступ для контента внизу*/    
 }
-.wrapper:after {
-    content: "";
-    height: 80px;
-    display: block;
+.head-container {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: 0 auto;
+    position: relative;    
 }
-.page-footer{
-    height: 80px;
-    margin-top: -80px;  
-}
-/* Футер */
-.page-footer{   
-    background: #eff3f7 url(../img/icon_lock.png) top center no-repeat;
-    font-family: 'fira_sanslight';
-  color: #4a545d;
-}
-.page-footer .container {
-    padding-top: 23px;
-    position: relative;  
-}
-.page-footer .copyright{
-    margin: 0 180px;
-    padding-top: 7px;
-    text-align: center;
-    font-size: 13px;
-}
-/* Логин */
-.page-footer .lock{
+.logo-link {
     position: absolute;
-    top: 26px;
-    left: 20px; 
+    top: 39px;
+    left: 0;
 }
-.lock .lock-inner {
+.logo-text {
+    position:absolute;
+    left:-9999px
+}
+.soc-menu {
+    position: absolute;
+    right: 0;
+    top: 36px;  
+}
+.soc-list {
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
+}
+.soc-item {
+    list-style: none;
+    display: inline-block;
+    height: 47px;
+    width: 47px;
+    margin-left: 19px;
+}
+.soc-item:first-child {
+  margin-left: 0;
+}
+.soc-link {
     display: block;
-    height: 40px;
-    font-family: 'fira_sansbook';
-  font-size: 16px;
-  line-height: 2.2;
-    color: #4a545d;
-    text-decoration: none;
-    background: url(../img/lock-close.png) no-repeat;
-    padding-left: 24px;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background: url(../img/socials.png) no-repeat;
 }
-.lock .lock-inner:hover{
-    text-decoration: underline;
-    background: url(../img/) no-repeat;
+
+.soc-link.vk {background-position: -2px -3px; }
+.soc-link.tw {background-position: -71px -3px; }
+.soc-link.fb {background-position: -140px -3px; }
+.soc-link.gh {background-position: -209px -3px; }
+.soc-link:hover {background-position-y: -65px; }
+/*конец шапки*/
+.main-content {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: 0 auto;
+    position: relative; 
+    height: 100%;    
+}
+/*меню слева*/
+.left-blocs {
+    width: 250px;
+    float: left;
+    margin-left: 120px;
+}
+.nav {
+    overflow: hidden;
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    border-top: 2px solid #3ba8c0;
+    margin: 0 11px;
+}
+.nav-item:first-child{
+    border-top: none;
+}
+.nav-list .nav-item.current{   
+    background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px; /* убираем нижнюю линию (хак от Димы) */
+}
+.nav-list .nav-item.current .nav-link {
+    color: #ebf5f7;
+    font-size: 22px;
+}
+.nav-item .nav-link {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0px;
+}
+.nav-item .nav-link:hover{
+    color: #3ba8c0;
+} 
+.contacts {
+    font-style: normal;
+    font-family: 'fira_sansbook';
+    background: #3ba8c0;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    color: #fbfcfd;
+}
+.contacts-title {
+    background-color: #3ba8c0;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 19px 1px;
+    font-size: 20px;
+    margin: 0;
+}
+.contacts .contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item {
+/*    display: block; */
+    padding: 6px 0 6px 82px;
+}
+.contacts-link {
+position: relative;
+font-size: 15px;
+text-align: left;
+text-decoration: none;
+color: #ecf8fc;
+}
+.contacts-item {
+
+}
+.contacts-item.mail {
+    background: #41b9d4 url(../img/mail.png) 42px center no-repeat;
+}
+.contacts-item.phone {
+    background: #48cbe8 url(../img/phone.png) 42px center no-repeat;
+}
+.contacts-item.skype {
+    background: #51daf8 url(../img/skype.png) 42px center no-repeat;
+}
+.contacts-link:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.osn-content {
+    width: 650px;
+    float: right;
 }
 
 /* clearfix */
 .clearfix:before,
 .clearfix:after {
 content: " ";
-display: table;
+display: block;
 }
 .clearfix:after {
 clear: both;

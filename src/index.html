@@ -4,100 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Для SEO -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <!-- SEO tags-->
+    <meta name="description" content="Sayt vizitka by Oleg">
+    <meta name="keywords" content="vizitka, Oleg Scvortov">
+    <meta name="author" content="Oleg Scvortov">
     <title>Сайт портфолио - Основная иформация</title>
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!--[if lt IE 7]>
-    <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+    <p class="browsehappy">Что то браузер у Вас <strong>староват !</strong>.
     Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
      <![endif]-->
-     
-<div class="wrapper">
-    <header class="page-header">
-        <div class="big-container">
-            <a href="/" class="logo-link">
-                <img src="img/logo.png" alt="logo">
-                <span class="logo-text">Сайт портфолио</span>
-            </a>
-
-        <div class="menu">
-                <div class="ic"></div>
+    <div class="wrapper-all">
+    <!-- Шапка-->
+        <header class="site-header">
+            <div class="head-container clearfix" >
+                <a href="http://oleg.oldmib.ru" class="logo-link">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">Сайт портфолио</span>
+                </a>
+                <div class="soc-menu">
+                    <ul class="soc-list">
+                        <li class="soc-item">
+                            <a href="https://vk.com/megadance2000" target="_blank" class="soc-link vk">Вконтакте</a>
+                        </li>
+                        <li class="soc-item">
+                            <a href="https://twitter.com/" target="_blank" class="soc-link tw">Twitter</a>
+                        </li>
+                        <li class="soc-item">
+                            <a href="https://www.facebook.com/MegaDance2000" target="_blank" class="soc-link fb">Facebook</a>
+                        </li>
+                        <li class="soc-item">
+                            <a href="https://github.com/MegaDance" target="_blank" class="soc-link gh">Github</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="soc-list">
-                <li class="soc-item">
-                    <a href="https://vk.com/megadance2000" target="_blank" class="soc-link vk">Вконтакте</a>
-                </li>
-                <li class="soc-item">
-                    <a href="https://twitter.com/" target="_blank" class="soc-link tw">Twitter</a>
-                </li>
-                <li class="soc-item">
-                    <a href="https://www.facebook.com/MegaDance2000" target="_blank" class="soc-link fb">Facebook</a>
-                </li>
-                <li class="soc-item">
-                    <a href="https://github.com/MegaDance" target="_blank" class="soc-link gh">Github</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    
-    <div class="main-content clearfix">
-        <div class="container">
-            
-            <!-- Основная часть -->
-            <div class="main-content">
-
-                <!-- Основная иформация -->
-                <section class="info-box">
-                    <div class="title">Основная иформация</div>
-                    <div class="body clearfix">
-                        <div class="img-box">
-                            <div class="img-wrap">
-                                <img src="img/avatar.jpg" alt="Олег Скворцов" class="avatar">
-                            </div>
-                        </div>
-
-                        <ul class="info-content clearfix ">
-                            <li class="inf-content-item clearfix">
-                                <div class="info-content-title">Меня зовут:</div>
-                                <div class="info-content-text">Скворцов Олег Олегович</div>
+            <div class="head-line"></div>
+        </header>
+    <!-- Шапка конец-->
+    <!-- Основная часть-->
+        <div class="main-content clearfix">    
+               <!-- Меню слева-->
+               <aside class="left-blocs">
+                <!-- Основное меню -->
+                   <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item current">
+                                <a href="#" class="nav-link">Обо мне</a>
                             </li>
-                            <li class="inf-content-item clearfix">
-                                <div class="info-content-title">Мой возраст:</div>
-                                <div class="info-content-text">35 лет</div>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Мои работы</a>
                             </li>
-                            <li class="inf-content-item clearfix">
-                                <div class="info-content-title">Мой город:</div>
-                                <div class="info-content-text">Москва, Россия</div>
-                            </li>
-                            <li class="inf-content-item clearfix">
-                                <div class="info-content-title">Моя специализация:</div>
-                                <div class="info-content-text">FRONTEND разработчик</div>
-                            </li>
-                            <li class="inf-content-item clearfix">
-                                <div class="info-content-title">Ключевые навыки:</div>
-                                <div class="info-content-text skills">
-                                    <div class="skill">html</div>
-                                    <div class="skill">css</div>
-                                    <div class="skill">javascript</div>
-                                    <div class="skill">gulp</div>
-                                    <div class="skill">git</div>
-                                </div>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Связаться со мной</a>
                             </li>
                         </ul>
-                    </div>
+                   </nav>
+               <!-- Контакты -->
+                    <address class="contacts">
+                        <div class="contacts-title">Контакты</div>
+                            <ul class="contacts-list">
+                                <li class="contacts-item mail">
+                                    <a href="mailto:megadance@pisem.net" class="contacts-link mail">oleg@awax.ru</a>
+                                </li>
+                                <li class="contacts-item phone">
+                                    <a href="tel:+79039794401" class="contacts-link phone">+79039794401</a>
+                                </li>
+                                <li class="contacts-item skype">
+                                    <a href="skype:megadance2000?chat" class="contacts-link skype">megadance2000</a>
+                                </li>
+                            </ul>
+                    </address>
+                </aside>
+            <!-- Основной контент -->   
+            <div class="osn-content">
+                <!-- Основная иформация -->
+                <section class="info-box">
+                    <div class="main-title">Основная иформация</div>
+                        <div class="body-main clearfix">
+                            <div class="image-box">
+                                <img src="img/man.png" alt="Олег Скворцов" class="avatar">
+                            </div>
+                            <ul class="info-content clearfix ">
+                                <li class="inf-content-item clearfix">
+                                    <div class="info-content-title">Меня зовут:</div>
+                                    <div class="info-content-text">Скворцов Олег Олегович</div>
+                                </li>
+                                <li class="inf-content-item clearfix">
+                                    <div class="info-content-title">Мой возраст:</div>
+                                    <div class="info-content-text">35 лет</div>
+                                </li>
+                                <li class="inf-content-item clearfix">
+                                    <div class="info-content-title">Мой город:</div>
+                                    <div class="info-content-text">Москва, Россия</div>
+                                </li>
+                                <li class="inf-content-item clearfix">
+                                    <div class="info-content-title">Моя специализация:</div>
+                                    <div class="info-content-text">FRONTEND разработчик</div>
+                                </li>
+                                <li class="inf-content-item clearfix">
+                                    <div class="info-content-title">Ключевые навыки:</div>
+                                    <div class="info-content-text skills">
+                                        <div class="skill">html</div>
+                                        <div class="skill">css</div>
+                                        <div class="skill">javascript</div>
+                                        <div class="skill">npm</div>
+                                        <div class="skill">gulp</div>
+                                        <div class="skill">git</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                 </section>
-                
                 <!-- Опыт работы -->
                 <section class="info-box">
-                    <div class="title">Опыт работы</div>
-                    <div class="body">
+                    <div class="main-title">Опыт работы</div>
+                    <div class="body-main">
                         <ul class="info-box-list">
                             <li class="info-box-item work">
                                 <div class="where">Motors24</div>
@@ -110,83 +137,32 @@
                         </ul>
                     </div>
                 </section>
-                
                 <!-- Образование -->
                 <section class="info-box">
-                    <div class="title">Образование</div>
-                    <div class="body">
+                    <div class="main-title">Образование</div>
+                    <div class="body-main">
                         <ul class="info-box-list">
-                            <li class="info-box-item univer">
+                            <li class="info-box-item obraz">
                                 <div class="where">Незаконченное высшее. мИБД</div>
                                 <div class="data">Сентябрь 1998 - Май 2002</div>
                             </li>
-                            <li class="info-box-item cours">
+                            <li class="info-box-item kurs">
                                 <div class="where">Курсы Loftschool.ru</div>
                                 <div class="data">Июль 2015 - по настоящее время</div>
                             </li>
                         </ul>
                     </div>
                 </section>
-            </div>
-
-            <div class="sidebar">
-                <!-- Навигация -->
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item active">
-                            <a href="/" class="nav-link">Обо мне</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link">Мои работы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contacts.html" class="nav-link">Связаться со мной</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <!-- Контакты -->
-                <div class="contacts">
-                    <div class="contacts-title">Контакты</div>
-                    <ul class="contacts-list">
-                        <li class="contacts-item mail">
-                            <a href="mailto:megadance@pisem.net" class="contacts-link mail">megadance@pisem.net</a>
-                        </li>
-                        <li class="contacts-item phone">
-                            <a href="tel:+79039794401" class="contacts-link phone">+79039794401</a>
-                        </li>
-                        <li class="contacts-item skype">
-                            <a href="skype:megadance2000?chat" class="contacts-link skype">megadance2000</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="soc-list">
-                    <li class="soc-item">
-                        <a href="https://vk.com/megadance2000" target="_blank" class="soc-link vk">Вконтакте</a>
-                    </li>
-                    <li class="soc-item">
-                        <a href="#" target="_blank" class="soc-link tw">Twitter</a>
-                    </li>
-                    <li class="soc-item">
-                        <a href="#" target="_blank" class="soc-link fb">Facebook</a>
-                    </li>
-                    <li class="soc-item">
-                        <a href="#" target="_blank" class="soc-link gh">Github</a>
-                    </li>
-                </ul>
-            </div>
+            </div> 
         </div>
-    </div>
-</div>
-    
-    <!-- Футер -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="lock">
-                <a href="/login.html" class="lock-inner">Войти</a>
+    </div>   <!-- Wrapper закрыли--> 
+    <!-- Подвал    -->
+    <footer class="footer">
+        <div class="footer-page">
+            <div class="zamok">
+                <a href="/login.html" class="zamok-img">Авторизация</a>
             </div>
-            <div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+            <div class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
         </div>
     </footer>
     
