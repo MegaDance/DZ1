@@ -1,0 +1,35 @@
+.info-box {
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+.main-title {
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px #3ba8c0 solid;
+    margin: 0 0 23px 0;
+    padding: 13px 23px;
+    display: inline-block;
+}
+.body-main {
+    padding-bottom: 40px;
+}
+
+.head-big {
+  background: #48cbe8;
+  border-bottom: 17px solid #67dffa;
+  padding: 42px 20px 38px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  margin-bottom: 41px;
+  }
+.contact-head-big {
+  font-family: 'fira_sansbook';
+  font-weight: normal;
+  font-size: 27px;
+  color: #ffffff;
+  border: none;
+  }
+  
