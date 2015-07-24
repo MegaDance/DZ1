@@ -65,8 +65,8 @@ body {
 .soc-link:hover {background-position-y: -65px; }
 /*конец шапки*/
 .main-content {
-    max-width: 1200px;
-    min-width: 960px;
+    /*max-width: 1200px;*/
+    width: 960px;
     margin: 0 auto;
     position: relative; 
     height: 100%;    
@@ -75,7 +75,7 @@ body {
 .left-blocs {
     width: 250px;
     float: left;
-    margin-left: 120px;
+/*    margin-left: 120px;*/
 }
 .nav {
     overflow: hidden;
@@ -169,7 +169,7 @@ color: #ecf8fc;
 .osn-content {
     width: 650px;
     float: right;
-    margin-right: 120px;
+   /* margin-right: 120px;*/
 }
 
 /*подвал*/
@@ -279,14 +279,13 @@ color: #ecf8fc;
 
 
 /* clearfix */
+
 .clearfix:before,
 .clearfix:after {
-content: " ";
-display: block;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
+
 .clearfix:after {
-clear: both;
-}
-.clearfix {
-*zoom: 1;
+    clear: both;
 }

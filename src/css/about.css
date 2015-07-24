@@ -22,6 +22,14 @@
     margin-left: 55px;
     margin-top: 18px;       
 }
+.no-borderradius .ava-box {
+    border: 5px solid #000;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+}
+
 .ava-box{
     width: 142px;
     height: 142px;
@@ -29,6 +37,8 @@
     overflow: hidden;
     border: 5px solid #3ba8c0;
 }
+
+
 .avatar{
     width: 100%;
 }
