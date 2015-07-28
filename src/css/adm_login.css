@@ -1,0 +1,63 @@
+  .login-wrapper {
+  width: 590px;
+  height: 484px;
+  text-align: center;
+  background-color: #eff3f7;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  box-shadow: 0 4px 7px 1px #b3b5b5;
+  }
+
+.head-login {
+  width: 100%;
+  height: 91px;
+  background: #48cbe8;
+  border-bottom: 16px solid #67dffa;
+}
+.head-title {
+  display: inline-block;
+  padding: 14px;
+  font: 'fira_sansbook';
+  font-size: 40px;
+  color: #ffffff;
+}
+.adm-body {
+  padding: 16px 82px;
+}
+
+.label {
+  font-family: 'fira_sanslight';
+  font-size: 36px;
+  color: #959aa8;
+}
+.input {
+  display: block;
+  height: 36px;
+  font-size: 17px;
+  font-family: 'fira_sanslight';
+  color: #48cbe8;
+  border-radius: 5px;
+  border: 1px solid #48cbe8;
+  width: 90%;
+  padding: 12px 19px;
+}
+
+.butt {
+  font-size: 36px;
+  height: 54px;
+  margin-top: 36px;
+  padding: 0 65px;
+  border-radius: 8px;
+  background-color: rgb(72, 203, 232);
+  border: solid #3ba8c0;
+  border-width: 0 0 3px 0;
+  color: #f6f6f6;
+  font-family: 'fira_sansbook';
+}
+
+.a-pass {  
+    margin-top: 10px;
+}
