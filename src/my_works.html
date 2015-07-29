@@ -12,9 +12,10 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="fonts/fira.css">
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/my_works.css">    
+    <link rel="stylesheet" href="css/my_works.css">  
+    <link rel="stylesheet" href="css/popup.css">       
     <script src="bower/modernizer/modernizr.js"></script>
 
 </head>
@@ -91,7 +92,27 @@
                 <section class="info-box">
                     <div class="main-title">Мои работы</div>
                         <div class="body-main clearfix">
-                                                        
+                            <div class="projects-wrapper">
+                                <ul class="projects-list">
+                                    <!-- Проект 1 -->
+                                    <li class="projects-item">
+                                        <div class="hover-img">
+                                            <img class="project-img" src="img/work/crede.jpg" alt="loftblog.ru">
+                                                <div class="zoom-wrapper">
+                                                    <a href="http://credecolor.ru/" class="zoom-link" target="_blank">credecolor.ru</a>
+                                                </div> 
+                                        </div>
+                                        <a href="http://credecolor.ru/" class="project-link" target="_blank">credecolor.ru</a>
+                                        <div class="project-desc">Сайт салона красоты</div> 
+                                    </li><!-- / Проект 1 -->                        
+                                    <!-- Добавить новый проект -->
+                                    <li class="projects-item add-new-item">
+                                         <a href="#" class="add-new-link" id="add-new-item">
+                                            <div class="add-new-text">Добавить проект</div>
+                                        </a>
+                                    </li><!-- / Добавить новый проект -->
+                                </ul>
+                            </div>                           
                         </div>
                 </section>
 
@@ -107,6 +128,61 @@
             <div class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
         </div>
     </footer>
-    
+
+
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- Добавить новый проект -->       
+    <div id="new-progect-popup">
+      <div class="modal-wrapper">
+        <div class="modal-header">
+          <button type="button" class="b-close"></button>
+          <h4 class="modal-title">Добавление проекта</h4>
+        </div>
+        <div class="modal-body">
+          <form id="add-new-project" class="form" role="form">  
+          <!-- Вывод сообщений с сервера -->
+          <div class="server-mes error-mes"></div>
+          <div class="server-mes success-mes"></div>
+          <!-- Название проекта -->
+          <div class="form-group">
+            <label for="projectName" class="label">Название проекта</label>
+            <input type="text" name="projectName" class="input" id="projectName" placeholder="Введите название" qtip-content="Вы не ввели название">
+          </div>      
+          <!-- Картинка проекта -->
+          <div class="form-group">
+            <div class="fileupload-wrapper" id="uploadfile">
+            <span class="label">Картинка проекта</span>
+            <label class="fileupload-lable">
+              <input id="fileupload" class="fileupload" type="file" name="files[]">
+              <input id="fileurl" type="hidden" name="fileurl">
+            </label>
+            <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
+            </div>
+          </div>
+          <!-- URL проекта -->
+          <div class="form-group">
+            <label for="projectUrl" class="label">URL проекта</label>
+            <input type="text" name="projectUrl" class="input" id="projectUrl" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку">
+          </div>
+          <!-- Описание -->
+          <div class="form-group">
+            <label for="projectDesc" class="label">Описание</label>
+            <textarea name="text" id="projectDesc" class="textarea" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"></textarea>
+          </div>
+          <!-- Кнопка "Отправить" -->
+            <div class="btn-wrapp">
+              <button type="submit" class="btn">Добавить</button>
+            </div>      
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- / МОДАЛЬНОЕ ОКНО -->
+    <!-- / Добавить новый проект --> 
+
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/add_progect.js"></script>
+    <script src="bower/bpopup/jquery.bpopup.js"></script>
 </body>
 </html>
