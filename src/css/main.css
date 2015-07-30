@@ -172,38 +172,6 @@ color: #ecf8fc;
    /* margin-right: 120px;*/
 }
 
-/*подвал*/
-/*.footer {
-    position: relative;
-    height: 80px;
-    margin-top: -80px;
-    background: url(../img/line.png) center top no-repeat #eff3f7;
-}
-.footer-page {
-    width: 960px;
-    margin: 0 auto;
-}
-.zamok-img {
-    position: absolute;
-    left: 31px;
-    top: 25px;
-    width: 20px;
-    height: 32px;
-    background: url(../img/icon_lock.png) left top no-repeat;
-    text-indent: -9999px;
-}
-.zamok-img:hover {
-  background-position: right top
-}
-
-.footer-page .copyright {
-    position: relative;
-    width: 100%;
-    padding: 0 20px;
-    font-size: 13px;
-    top: 35px;
-    text-align: center;
-}*/
 
 /* прибьём футер к низу*/
 .wrapper-all {

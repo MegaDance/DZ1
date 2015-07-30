@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contact_me.css">
     <script src="bower/modernizer/modernizr.js"></script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -93,7 +93,51 @@
                         <h2 class="contact-head-big">У вас интересный проект? Напишите мне!</h2>
                     </div>
                         <div class="body-main clearfix">
-                                                        
+                            <div class="contact-wraper">
+                                <form id="contact_me" class="contact_form">   
+                                   <div class="form_head clearfix">
+                                        <!-- Имя -->
+                                        <div class="form-group pull-left">
+                                          <label for="name" class="label">Имя</label>
+                                          <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="form-group pull-right">
+                                          <label for="email" class="label">Email</label>
+                                          <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
+                                        </div>
+                                  </div>
+
+                                  <!-- Сообщение -->
+                                  <div class="form-group text-message">
+                                    <label for="message" class="label">Сообщение</label>
+                                    <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                                  </div>
+
+                                  <!-- Капча -->
+                                  <div class="captcha-wrap clearfix">
+                                    <div class="g-recaptcha" data-sitekey="6LfSgQoTAAAAAKpyKpzDe_DyK5Hm20cYSfBoOQ_d"></div>
+                                  </div>
+
+                                  <!-- Кнопка "Отправить" -->
+                                  <div class="button-group">
+                                    <button type="submit" class="btn">Отправить</button>
+                                    <button type="reset" class="btn btn-res">Очистить</button>
+                                  </div>      
+                                </form>
+                            </div> 
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                 </section>
 

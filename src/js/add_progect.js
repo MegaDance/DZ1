@@ -8,6 +8,7 @@ var myModule = (function () {
     // Прослушивает события 
     var _setUpListners = function () {
         $('#add-new-item').on('click', _showModal); //открыть попап окно
+        $('add-')
             };
 
     var _showModal = function  (ev) {
