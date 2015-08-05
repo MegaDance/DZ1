@@ -1,15 +1,28 @@
-  .login-wrapper {
+.main-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+.main-content:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+
+
+.login-wrapper {
   width: 590px;
   height: 484px;
-  text-align: center;
   background-color: #eff3f7;
-  position: absolute;
-  top: 30px;
-  right: 0;
-  left: 0;
-  margin: auto;
   box-shadow: 0 4px 7px 1px #b3b5b5;
   }
+  
+
 
 .head-login {
   width: 100%;
