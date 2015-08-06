@@ -2,7 +2,7 @@
   "name": "Vizitka",
   "version": "0.1.0",
   "dependencies": {
-    "jquery": "~2.1.4",
+    "jquery": "1.11.3",
     "bootstrap": "~3.3.5",
     "normalize.css": "~3.0.3",
     "modernizer": "~2.8.2",
