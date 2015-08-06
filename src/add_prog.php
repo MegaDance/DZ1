@@ -9,27 +9,13 @@
     if ($name === '') {
         $data['status'] = 'error';
         $data['text'] = 'Заполните имя!';
-    }else{
-        $data['status'] = 'OK';
-        $data['text'] = 'OK';
-    }
-
-    // if ($file === '') {
-    //     $data['status'] = 'error';
-    //     $data['text'] = 'Добавьте картинку';
-    // }else{
-    //     $data['status'] = 'OK';
-    // }
-
-    if ($projectUrl === '') {
+    }elseif ($file === '') {
+        $data['status'] = 'error';
+        $data['text'] = 'Добавьте картинку';
+    }elseif ($projectUrl === '') {
         $data['status'] = 'error';
         $data['text'] = 'введите URL';
-    }else{
-        $data['status'] = 'OK';
-        $data['text'] = 'OK';
-    }
-
-    if ($text === '') {
+    }elseif ($text === '') {
         $data['status'] = 'error';
         $data['text'] = 'Опишите проект';
     }else{
