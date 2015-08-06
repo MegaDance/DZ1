@@ -17,11 +17,13 @@
 
 .login-wrapper {
   width: 590px;
-  height: 484px;
+/*  height: 484px;*/
   background-color: #eff3f7;
   box-shadow: 0 4px 7px 1px #b3b5b5;
+  display: inline-block;
+  vertical-align: middle;
   }
-  
+
 
 
 .head-login {
