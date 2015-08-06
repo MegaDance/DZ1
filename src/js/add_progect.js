@@ -10,15 +10,21 @@ var myModule = (function () {
         $('#add-new-item').on('click', _showModal); //открыть попап окно
         $('#add-new-project').on('submit', _addProgect); //добавим проект
     };
-
+    //работа с попап окном
     var _showModal = function (ev) {
         console.log('Вызов попап окна');
         ev.preventDefault();
-        $('#new-progect-popup').bPopup({
+        var DivPopup = $('#new-progect-popup'),
+            form = DivPopup.find('.form');
+        DivPopup.bPopup({
             speed: 500,
-            transition: 'slideIn'
+            transition: 'slideIn',
+            onClose: function(){
+                form.find('.server-mes').text('').hide();
+            }
         });
     };
+    //Добавляет проект
     var _addProgect = function (ev) {
         console.log('Добавили проект');
         ev.preventDefault();
@@ -26,23 +32,40 @@ var myModule = (function () {
         //обьявляем переменные
         var form = $(this),
             url = 'add_prog.php',
-            data = form.serialize();
-        console.log(data);
+            ServerAns = _ajaxForm (form, url);
 
-        //Ajax запросы на сервер
-        $.ajax({
+
+        ServerAns.done(function(ans) {
+            var successBox = form.find('.success-mes'),
+                errorBox = form.find('.error-mes');
+
+            if(ans.status === 'OK'){                        
+                errorBox.hide();
+                successBox.text(ans.text).show();                       
+            }else{
+                successBox.hide();
+                errorBox.text(ans.text).show();
+            }
+        })
+    };
+    //Проверка формы
+    var _ajaxForm = function (form, url) {
+        data = form.serialize();
+        var result = $.ajax({
             url: url,
             type: 'POST',
             dataType: 'json',
             data: data,
-        })
-        .done(function(ans) {
-            console.log('Success');
-            console.log(ans);
-        })
+        }).fail ( function(ans){
+            console.log ('Проблемы с PHP'),
+            form.find ('.error-mes').text('Ошибка на сервере').show();
+        });
+        return result;
     };
+
 return {
     init: init
 };
 })();
+
 myModule.init();

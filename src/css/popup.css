@@ -202,3 +202,27 @@ input, textarea, button {
     font-size: 13px;
 }
 /* _____________ // тултипы _________ */
+
+.server-mes {
+    background-color: #fad2d1;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 12px;
+    width: 100%;
+    padding: 6px 1px;
+    margin-bottom: 6px;
+    display: none;
+}
+
+.success-mes {
+    border-color: #49bb7b;
+    color: #49bb7b;
+    box-sizing: border-box;
+}
+
+.error-mes {
+    border-color: #49bb7b;
+    color: #49bb7b;
+    box-sizing: border-box;
+}  
+}

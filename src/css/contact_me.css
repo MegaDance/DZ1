@@ -72,7 +72,22 @@
     border: 1px solid rgb(72, 203, 232);
     border-radius: 4px;
     outline: none;
+    input::-webkit-input-placeholder {color:red; }
+    }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+   color: #48cbe8;
 }
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #48cbe8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #48cbe8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #48cbe8;
+}
+
 
 .input {
     -webkit-box-sizing: border-box;
@@ -93,6 +108,8 @@
   border-radius: 4px;
   outline: none; 
   resize: none;
+  padding: 12px 12px;
+  font-size: 12px
 }
 
 .captcha-wrap {
