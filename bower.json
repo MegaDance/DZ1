@@ -6,6 +6,8 @@
     "bootstrap": "~3.3.5",
     "normalize.css": "~3.0.3",
     "modernizer": "~2.8.2",
-    "bpopup": "~0.11.0"
+    "bpopup": "~0.11.0",
+    "jquery-placeholder": "~2.1.2",
+    "qtip2": "~2.2.1"
   }
 }
